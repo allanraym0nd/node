@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --env-file=.env server2.js"
+    "start": "node --env-file=.env osDemo.js"
   },
   "author": "",
   "license": "MIT",
