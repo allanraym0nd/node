@@ -16,7 +16,7 @@ console.log(import.meta.url)
 //file url to path -- file path()
 console.log(url.fileURLToPath(import.meta.url))
 
-const params = URLSearchParams(urlObj.search)
+const params = new URLSearchParams(urlObj.search)
 console.log(params)
 console.log(params.get('q')) // or just  console.log(url.format(urlObj.search))
 

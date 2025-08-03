@@ -15,7 +15,7 @@ const logger = (req,res,next) => {
 }
 
 const jsonMiddleWare = (req,res,next) => {
-    res.setHeader('Content-Type', 'application/json') // Fixed typo: was 'spplication/json'
+    res.setHeader('Content-Type', 'application/json') 
     next(); // Added missing next() call
 }
 
@@ -54,7 +54,7 @@ const createUserHandler = (req,res) => {
     req.on('data', (chunk) => {
         body += chunk.toString()
     });
-    req.on('end', () => { // Fixed: added quotes around 'end'
+    req.on('end', () => { 
         const newUser = JSON.parse(body)
         users.push(newUser)
         res.statusCode = 201
